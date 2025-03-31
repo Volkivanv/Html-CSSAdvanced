@@ -165,10 +165,19 @@ a, button {
   border: 1px solid #EAEAEA;
   background-color: #F7F7F7;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 11px;
   padding-bottom: 42px;
   z-index: 0;
+}
+.product-box__narrow {
+  height: 47px;
+  width: 47px;
+  background: rgba(42, 42, 42, 0.1490196078);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .product-box__imgbox {
   width: 597px;
@@ -185,16 +194,17 @@ a, button {
 }
 .product__content {
   z-index: 3;
-  height: 600px;
   width: 1140px;
   padding-top: 65px;
+  padding-bottom: 65px;
   background-color: #FFFFFF;
   border: 1px solid #EAEAEA;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  align-items: center;
 }
 .product__collection {
+  margin-bottom: 12px;
   font-family: Lato;
   font-weight: 400;
   font-size: 14px;
@@ -206,6 +216,7 @@ a, button {
   width: 63px;
   height: 3px;
   background-color: #EF5B70;
+  margin-bottom: 12px;
 }
 .product__name {
   font-style: normal;
@@ -213,13 +224,17 @@ a, button {
   font-size: 18px;
   line-height: 120%;
   color: #4D4D4D;
+  margin-bottom: 48px;
 }
 .product__text {
   font-family: Lato;
   font-weight: 400;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 120%;
   color: #5E5E5E;
+  max-width: 570px;
+  text-align: center;
+  margin-bottom: 32px;
 }
 .product__price {
   font-style: normal;
@@ -227,25 +242,35 @@ a, button {
   font-size: 24px;
   line-height: 120%;
   color: #F16D7F;
+  margin-bottom: 65px;
 }
 .product__line {
   width: 642px;
   height: 1px;
-  border-width: 1px;
   background-color: #EF5B70;
+  margin-bottom: 65px;
+  border: 1px solid #EAEAEA;
+}
+.product__sort {
+  margin-bottom: 49px;
+  display: flex;
+  gap: 23px;
+  justify-content: space-between;
 }
 .product__link {
   color: #6F6E6E;
+  display: flex;
+  justify-content: space-between;
+  gap: 9px;
 }
 .product__button {
   border: 1px solid #FF6A6A;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 11px 15px 9px 15px;
-  gap: 11px;
+  padding: 15px 57px 15px 24px;
+  gap: 22px;
   cursor: pointer;
-  margin-bottom: 0;
   background: none;
 }
 
