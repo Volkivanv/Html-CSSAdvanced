@@ -910,6 +910,7 @@ a, button {
 }
 .main .registration__radiobutton {
   border: 1px solid #A4A4A4;
+  cursor: pointer;
 }
 .main .registration__text {
   font-family: Lato;
@@ -931,6 +932,14 @@ a, button {
   justify-content: center;
   align-items: center;
   border: none;
+}
+.main .registration__button:hover {
+  background: #FFFFFF;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+.main .registration__button:hover path {
+  fill: #F16D7F;
 }
 .main .registration-loyalty__header {
   font-family: Lato;
