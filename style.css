@@ -231,7 +231,8 @@ a, button {
   color: #F16D7F;
 }
 .main .product-box {
-  width: 1600px;
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
   border: 1px solid #EAEAEA;
   background-color: #F7F7F7;
   display: flex;
@@ -383,7 +384,7 @@ a, button {
 }
 .main .product__content {
   z-index: 3;
-  width: 1140px;
+  max-width: 1140px;
   padding-top: 65px;
   padding-bottom: 65px;
   background-color: #FFFFFF;
@@ -434,9 +435,9 @@ a, button {
   margin-bottom: 65px;
 }
 .main .product__line {
-  width: 642px;
+  width: 1014px;
   height: 1px;
-  background-color: #EF5B70;
+  background: #EF5B70;
   margin-bottom: 65px;
   border: 1px solid #EAEAEA;
 }
@@ -453,6 +454,7 @@ a, button {
   gap: 9px;
 }
 .main .product__button {
+  font-size: 16px;
   border: 1px solid #FF6A6A;
   display: flex;
   justify-content: space-between;
@@ -1217,6 +1219,15 @@ a, button {
   .main .sort__details {
     position: relative;
   }
+  .main .product {
+    margin-top: 0px;
+  }
+  .main .product__line {
+    width: 610px;
+  }
+  .main .product__link {
+    font-size: 14px;
+  }
   .main_begin {
     max-width: 768px;
     margin: 0 auto;
@@ -1265,7 +1276,7 @@ a, button {
   .main .products .card {
     max-height: 582px;
   }
-  .main .products .card_3 {
+  .main .products .tablet-invisible {
     display: none;
   }
   .footer {
@@ -1390,6 +1401,29 @@ a, button {
   .main .sort__summary {
     gap: 9px;
   }
+  .main .product-box__imgbox {
+    width: 375px;
+    height: 454px;
+  }
+  .main .product-box__img {
+    width: 100%;
+  }
+  .main .product {
+    padding-left: calc(50% - 187.5px);
+    padding-right: calc(50% - 187.5px);
+    margin-top: 0;
+    margin-bottom: 64px;
+  }
+  .main .product__price {
+    margin-bottom: 32px;
+  }
+  .main .product__line {
+    width: 249px;
+  }
+  .main .product__link {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
   .main_begin {
     max-width: 375px;
     margin-bottom: 64px;
@@ -1440,7 +1474,7 @@ a, button {
   .main .products .card {
     max-width: 100%;
   }
-  .main .products .card_3 {
+  .main .products .mobile-invisible {
     display: none;
   }
   .main .products .Add_to_card {

@@ -270,7 +270,9 @@ a, button {
     }
     
     .product-box {
-        width: $widthDesktop;
+     //   width: $widthDesktop;
+        padding-left: calc(50% - $widthDesktop / 2);
+        padding-right: calc(50% - $widthDesktop / 2);
         border: 1px solid #EAEAEA;
         background-color: #F7F7F7;
         display: flex;
@@ -461,7 +463,7 @@ a, button {
         &__content {
             z-index: 3;
            // height: $productHeight;
-            width: $widthContainer;
+            max-width: $widthContainer;
             padding-top: 65px;
             padding-bottom: 65px;
             
@@ -526,9 +528,9 @@ a, button {
         }
     
         &__line {
-            width: 642px;
+            width: calc($widthContainer - 2 * 63px);
             height: 1px;
-            background-color: #EF5B70;
+            background: #EF5B70;
             margin-bottom: 65px;
     
             border: 1px solid #EAEAEA;
@@ -551,6 +553,7 @@ a, button {
         }
     
         &__button {
+            font-size: 16px;
             border: 1px solid #FF6A6A;
             display: flex;
             justify-content: space-between;
@@ -1408,6 +1411,18 @@ a, button {
             } 
         }
 
+
+        .product {
+            margin-top: 0px;
+        
+            &__line {
+                width: calc($widthTabletContainer - 2 * 63px);
+            }
+            &__link {
+                font-size: 14px;
+            }
+        }
+
         &_begin{
             max-width: $widthTablet;
             margin: 0 auto;
@@ -1467,13 +1482,14 @@ a, button {
             .card{
                 max-height: 582px;
             }
-            .card_3{
+            .tablet-invisible{
                 display: none;
             }
         }
 
-    }
 
+        
+    }
    
     .footer{
         max-width: $widthTablet;
@@ -1640,6 +1656,43 @@ a, button {
             }
         }
 
+        .product-box {
+
+            
+            &__imgbox {
+                width: $widthMobile;
+                height: 454px;
+            }
+        
+            &__img {
+                width: 100%;
+            }
+        }    
+        .product {
+            padding-left: calc(50% - $widthMobile / 2);
+            padding-right: calc(50% - $widthMobile / 2);
+                
+            margin-top: 0;
+            margin-bottom: 64px;
+        
+        
+            &__price {
+                margin-bottom: 32px;
+            }
+        
+            &__line {
+                width: calc($widthMobile - 2 * 63px);
+            }
+        
+        
+            &__link {
+                font-size: 12px;
+                margin-bottom: 15px;
+        
+            }
+        }
+    
+
         &_begin{
             max-width: $widthMobile;
     
@@ -1682,36 +1735,37 @@ a, button {
             max-height: 111px;
         }
 
-            .products{
-        h2 {
-            margin-bottom: 3px;
-        }
-    
-        h3 {
-            margin-bottom: 65px;
-        }
-
-        button {
-            margin-bottom: 85px;
-        }
-
-        .product_panel{
-            margin-bottom: 40px;
-            gap: 16px;
-        }
-
-        .card{
-            max-width: 100%;
-        }
-        .card_3{
-                display: none;
+        .products{
+            h2 {
+                margin-bottom: 3px;
             }
         
-        .Add_to_card{
-            $widthMobileContainer: 343px;
-            height: 400px;
+            h3 {
+                margin-bottom: 65px;
+            }
+
+            button {
+                margin-bottom: 85px;
+            }
+
+            .product_panel{
+                margin-bottom: 40px;
+                gap: 16px;
+            }
+
+            .card{
+                max-width: 100%;
+            }
+
+            .mobile-invisible{
+                display: none;
+            }
+            
+            .Add_to_card{
+                $widthMobileContainer: 343px;
+                height: 400px;
+            }
         }
-    }
 
 
     }
