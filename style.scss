@@ -807,16 +807,26 @@ a, button {
     }
 
     .cart {
-        padding: 96px 230px 129px 230px;
+     //   padding: 96px 230px 129px 230px;
+        margin-top: 96px;
+        margin-bottom: 96px;
         display: flex;
         justify-content: space-between;
         gap: 128px;
+        flex-wrap: wrap;
 
         &__content{
-            max-width: 652px;
+            width: 652px;
             display: flex;
             flex-direction: column;
             gap: 40px;
+        }
+
+        &__right-side{
+            display: flex;
+            flex-direction: column;
+            gap: 57px;
+            align-items: flex-start;
         }
 
         &__buttons{
@@ -836,10 +846,13 @@ a, button {
                 color: #FFFFFF;
                 background: #A4A4A4;
             }
+            .lowercase{
+                display: none;
+            }
         }
         &__address {           
             margin-top: 17px;
-            margin-bottom: 57px;
+            width: 360px;
         }
         &__heading{
             margin-bottom: 0;
@@ -885,6 +898,9 @@ a, button {
             line-height: 13px;
             background: #FFFFFF;
             width: 102px;
+            .lowercase{
+                display: none;
+            }
             &:hover {
                 color: white;
                 background-color: #A4A4A4;
@@ -893,11 +909,13 @@ a, button {
 
         &__proceed{
             width: 275px;
+           // height: 214px;
             background: #F5F3F3;
             padding: 40px 42px 40px 43px;
             display: flex;
             flex-direction: column;
             align-items:flex-end;
+          //  align-self: auto;
             &-subtotal{
                 color: #4A4A4A;
                 font-family: Lato;
@@ -980,7 +998,7 @@ a, button {
                 font-family: Lato;
                 font-weight: 400;
                 font-size: 24px;
-                line-height: 29px;
+                line-height: 120%;
                 color: $colorDarkText;
                 margin-bottom: 42px;
                 width: 262px;
@@ -1346,8 +1364,6 @@ a, button {
 
     .main{
 
-
-
         .filter-sort {
             padding-top: 11px;
             height: 81px;
@@ -1487,6 +1503,51 @@ a, button {
             }
         }
 
+        .cart {
+
+            margin-top: 59px;
+            margin-bottom: 129px;
+            gap: 64px;
+            &__content{
+                width: $widthTabletContainer;
+            }
+            
+            &__right-side{
+                flex-direction: row;
+                gap: 15px;
+            }
+
+            &__buttons{
+                margin-top: 22px;
+                justify-content: center;
+                gap: 48px;
+            }
+            //
+            &__button{
+
+            }
+            &__address {           
+                
+            }
+            &__heading{
+                
+            }
+            &__form{
+                
+            }
+
+            &__input{
+                
+            }
+            &__button-adress{
+            
+            }
+
+            &__proceed{
+                max-height: 214px;
+                margin-top: 56px;
+            }
+        }
 
         
     }
@@ -1767,15 +1828,100 @@ a, button {
             }
         }
 
+        
+        .cart {
+
+            margin-top: 39px;
+            margin-bottom: 96px;
+            gap: 48px;
+            &__content{
+                width: $widthMobileContainer;
+                gap: 32px;
+            }
+            
+            &__right-side{
+                flex-direction: column;
+                gap: 48px;
+            }
+
+            &__buttons{
+                margin-top: 0px;
+                justify-content: center;
+                gap: 9px;
+            }
+            //
+            &__button{
+                padding: 9px 18px 9px 18px;
+                font-size: 12px;
+                .lowercase{
+                    display: block;
+                }
+                .capcase{
+                    display: none;
+                }
+            }
+
+            &__button-adress{
+                .lowercase{
+                    display: block;
+                }
+                .capcase{
+                    display: none;
+                }
+            }
+
+            &__proceed{
+                max-height: 214px;
+                margin-top: 0px;
+            }
+        }
+        .cart-item{
+
+                height: 188px;
+                &__photo{
+                    width: 144px;
+                }
+                &__content{
+                    padding: 13px 53px 37px 17px;
+                }
+                &__close{
+
+                    top: 17px;
+                    right: 12px;
+                    svg{
+                        height: 10px;
+                        width: 10px;
+                    }
+                }
+                &__info{
+                    gap: 4px;
+            
+                }
+                &__link{
+
+                    font-size: 16px;
+                  //  line-height: 18px;
+                    margin-bottom: 26px;
+                    width: 140px;
+                }
+                &__text{
+                    font-size: 14px;
+                    line-height: 16px;
+                    &_quantity{
+                        gap: 35px;
+                    }
+                }
+                &__number{
+                    font-size: 10px;
+                    line-height: 15px;
+                    width: 24px;
+                    height: 15px;
+                }
+        }
+        
+
 
     }
-
-
-
-
-
-
-
 
     .footer{
         $widthMobile: 375px;
