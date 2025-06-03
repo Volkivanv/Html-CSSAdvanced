@@ -1041,6 +1041,7 @@ a, button {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            width: 360px;
         }
         &__header{
             font-family: Lato;
@@ -1051,7 +1052,7 @@ a, button {
 
         }
         &__input{
-            width: 360px;
+            // width: 360px;
             height: 45px;
             padding-left: 17px;
             border: 1px solid #A4A4A4;
@@ -1063,22 +1064,29 @@ a, button {
         &__radiogroup{
             display: flex;
             justify-content: space-between;
-            width: 132px;
+        //    width: 132px;
             font-family: Lato;
             font-weight: 400;
             font-size: 11px;
             line-height: 13px;
             margin-top: 11px;
             margin-bottom: 13px;
+            gap: 20px;
+            justify-content:flex-start;
         }
         &__radiogroup-item{
             display: flex;
             gap: 10px;
             align-items: center;
+
         }
         &__radiobutton{
             border: 1px solid #A4A4A4;
             cursor: pointer;
+            
+        }
+        .radiobutton_other{
+            display: none;
         }
         &__text{
             font-family: Lato;
@@ -1110,6 +1118,7 @@ a, button {
             }
         }
         &-loyalty{
+   //         width: 360px;
             &__header{
                 font-family: Lato;
                 font-weight: 400;
@@ -1522,26 +1531,6 @@ a, button {
                 justify-content: center;
                 gap: 48px;
             }
-            //
-            &__button{
-
-            }
-            &__address {           
-                
-            }
-            &__heading{
-                
-            }
-            &__form{
-                
-            }
-
-            &__input{
-                
-            }
-            &__button-adress{
-            
-            }
 
             &__proceed{
                 max-height: 214px;
@@ -1549,7 +1538,44 @@ a, button {
             }
         }
 
-        
+        .registration {
+            gap: 22px;
+            padding-top: 40px;
+            padding-bottom: 14px;
+            &__form{
+                gap: 20px;
+            }
+            &__header{
+                font-family: Lato;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: $colorDarkText;
+
+            }
+            .radiobutton_other{
+                display: block;
+            }
+            &-loyalty{
+                &__header{
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                &__text{
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                &__list{
+                    gap: 16px;
+                }
+                &__item{
+                    font-size: 16px;
+                    line-height: 29px;
+                    gap: 16px;
+
+                }
+            }
+        }
     }
    
     .footer{
@@ -1616,12 +1642,14 @@ a, button {
     .main{
         
         .top-head {
+            height: 78px;
             margin: 0 auto;
             padding-top: 24px;
             padding-bottom: 46px;
-            gap: 32px;
+            gap: 25px;
             display: flex;
             flex-direction: column;
+            justify-content: center;
         
         }
 
@@ -1919,6 +1947,45 @@ a, button {
                 }
         }
         
+        .registration {
+            flex-direction: column;
+            gap: 40px;
+            padding-top: 40px;
+            padding-bottom: 14px;
+            &__form{
+                gap: 20px;
+            }
+            &__header{
+                font-family: Lato;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: $colorDarkText;
+
+            }
+            .radiobutton_other{
+                display: block;
+            }
+            &-loyalty{
+                &__header{
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                &__text{
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                &__list{
+                    gap: 16px;
+                }
+                &__item{
+                    font-size: 16px;
+                    line-height: 24px;
+                    gap: 16px;
+
+                }
+            }
+        }
 
 
     }

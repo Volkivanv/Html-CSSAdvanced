@@ -895,6 +895,7 @@ a, button {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 360px;
 }
 .main .registration__header {
   font-family: Lato;
@@ -904,7 +905,6 @@ a, button {
   color: #222222;
 }
 .main .registration__input {
-  width: 360px;
   height: 45px;
   padding-left: 17px;
   border: 1px solid #A4A4A4;
@@ -918,13 +918,14 @@ a, button {
 .main .registration__radiogroup {
   display: flex;
   justify-content: space-between;
-  width: 132px;
   font-family: Lato;
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
   margin-top: 11px;
   margin-bottom: 13px;
+  gap: 20px;
+  justify-content: flex-start;
 }
 .main .registration__radiogroup-item {
   display: flex;
@@ -934,6 +935,9 @@ a, button {
 .main .registration__radiobutton {
   border: 1px solid #A4A4A4;
   cursor: pointer;
+}
+.main .registration .radiobutton_other {
+  display: none;
 }
 .main .registration__text {
   font-family: Lato;
@@ -1314,6 +1318,40 @@ a, button {
     max-height: 214px;
     margin-top: 56px;
   }
+  .main .registration {
+    gap: 22px;
+    padding-top: 40px;
+    padding-bottom: 14px;
+  }
+  .main .registration__form {
+    gap: 20px;
+  }
+  .main .registration__header {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+  }
+  .main .registration .radiobutton_other {
+    display: block;
+  }
+  .main .registration-loyalty__header {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .main .registration-loyalty__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .main .registration-loyalty__list {
+    gap: 16px;
+  }
+  .main .registration-loyalty__item {
+    font-size: 16px;
+    line-height: 29px;
+    gap: 16px;
+  }
   .footer {
     max-width: 768px;
   }
@@ -1360,12 +1398,14 @@ a, button {
     margin-right: 16px;
   }
   .main .top-head {
+    height: 78px;
     margin: 0 auto;
     padding-top: 24px;
     padding-bottom: 46px;
-    gap: 32px;
+    gap: 25px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .main .filter-sort {
     padding-top: 11px;
@@ -1590,6 +1630,41 @@ a, button {
     line-height: 15px;
     width: 24px;
     height: 15px;
+  }
+  .main .registration {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 14px;
+  }
+  .main .registration__form {
+    gap: 20px;
+  }
+  .main .registration__header {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+  }
+  .main .registration .radiobutton_other {
+    display: block;
+  }
+  .main .registration-loyalty__header {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .main .registration-loyalty__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .main .registration-loyalty__list {
+    gap: 16px;
+  }
+  .main .registration-loyalty__item {
+    font-size: 16px;
+    line-height: 24px;
+    gap: 16px;
   }
   .footer .fog {
     flex-direction: column;
